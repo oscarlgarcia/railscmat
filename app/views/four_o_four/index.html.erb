@@ -1,0 +1,4 @@
+<!-- Contenido aqui--> 
+<% if flash[:status] %>
+  <h1><%= flash[:status] %><%= I18n.t('errors.page.not_found') %></h1>
+<% end %>

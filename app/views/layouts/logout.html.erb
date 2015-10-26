@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CMAT</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<head> 
+	<title>CMAT</title>
+</head>
+<body class="darkbox boxsp6 vault">
+  <div id="wrapper">
+    <div id="main">
+	  <div id="section">
+        <div id="article" class="container">
+         <div class="page-header">
+           <h1><%= t('views.session.logout.title_header') %></h1>
+        </div>
+            <%= yield %>
+       </div>
+      </div>
+	</div>
+  </div>
+  <div id="extra-div">
+  </div>
+</body>

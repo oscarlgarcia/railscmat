@@ -1,0 +1,1268 @@
+# Logfile created on 2015-01-26 13:24:11 +0100 by logger.rb/31641
+D, [2015-01-26T13:24:25.848459 #6700] DEBUG -- : 
+D, [2015-01-26T13:24:25.848459 #6700] DEBUG -- : 
+I, [2015-01-26T13:24:25.862460 #6700]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:24:25 +0100
+D, [2015-01-26T13:24:26.487496 #6700] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2015-01-26T13:24:26.545499 #6700]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:24:26.546499 #6700]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:24:26.588501 #6700] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:24:26.719509 #6700] ERROR -- : xxxxxx[{"id"=>"13901", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Black Marianne", "remote_iban"=>"DE26844843586112417701", "remote_bic"=>"UINVDEFF"}, "subject"=>"Autoscooter Budget - Kirmes Dresden", "amount"=>112334, "currency"=>nil, "booking_date"=>"2014-11-11", "value_date"=>"2014-11-12", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:48 UTC", "updated_at"=>"2014-12-12 09:08:48 UTC"}, {"id"=>"13902", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Down Ellen", "remote_iban"=>"DE72965563127674898541", "remote_bic"=>"PARBDEFFBRE"}, "subject"=>"Auszahlung Tantieme 1126612", "amount"=>64483, "currency"=>nil, "booking_date"=>"2014-09-29", "value_date"=>"2014-09-30", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13903", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Jesus", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"UINVDEFF"}, "subject"=>"Gehalt 1077672", "amount"=>159098, "currency"=>nil, "booking_date"=>"2014-11-14", "value_date"=>"2014-11-15", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13904", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Gerold", "remote_iban"=>"DE02029018103622205188", "remote_bic"=>"PARBDEFFISI"}, "subject"=>"Lohn 447010", "amount"=>86069, "currency"=>nil, "booking_date"=>"2014-09-17", "value_date"=>"2014-09-18", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13905", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Pellham Marianne", "remote_iban"=>"DE26943527764940823364", "remote_bic"=>"CITIDEFFKEL"}, "subject"=>"Verkauf Ebay 727180", "amount"=>50162, "currency"=>nil, "booking_date"=>"2014-10-10", "value_date"=>"2014-10-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13906", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Anna", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Pokerturniergewinn Casino Berchtesgaden", "amount"=>107149, "currency"=>nil, "booking_date"=>"2014-10-31", "value_date"=>"2014-11-01", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13907", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Steht Horst", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Rückzahlung Auslage 1039329", "amount"=>171590, "currency"=>nil, "booking_date"=>"2014-11-13", "value_date"=>"2014-11-14", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13908", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Motzi Pauline", "remote_iban"=>"DE08474121590232607273", "remote_bic"=>"CITIDE55SEC"}, "subject"=>"Schmiergeld von Heinz ***", "amount"=>4536, "currency"=>nil, "booking_date"=>"2014-12-05", "value_date"=>"2014-12-06", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13909", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Spencer Paul", "remote_iban"=>"DE12521758158911675030", "remote_bic"=>"CXCXDEDD"}, "subject"=>"Kindergeld vom kleinen Bud", "amount"=>52128, "currency"=>nil, "booking_date"=>"2014-09-21", "value_date"=>"2014-09-22", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13910", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Bogen Bill", "remote_iban"=>"DE10837933364388507214", "remote_bic"=>"HYVEDEMM393"}, "subject"=>"Auszahlung Tantieme 1110957", "amount"=>128929, "currency"=>nil, "booking_date"=>"2014-12-10", "value_date"=>"2014-12-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}]xxxxx
+I, [2015-01-26T13:24:26.766512 #6700]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (18.0ms)
+I, [2015-01-26T13:24:26.767512 #6700]  INFO -- : Completed 500 Internal Server Error in 220ms
+F, [2015-01-26T13:24:26.769512 #6700] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:     <tbody>
+    13: 	  <% @transactions.each do |transaction|%>
+    14:         <tr>
+    15:           <td><%= @transaction.id%></td>
+    16:         </tr>
+    17:       <% end %>
+    18:     </tbody>
+  app/views/transactions/index.html.erb:15:in `block in _app_views_transactions_index_html_erb___911459686_30758544'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb___911459686_30758544'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:24:26.798513 #6700]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:24:26.823515 #6700]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:24:26.823515 #6700]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.0ms)
+D, [2015-01-26T13:26:15.314224 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:15.314224 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:15.315225 #8012]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:26:15 +0100
+D, [2015-01-26T13:26:15.914259 #8012] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2015-01-26T13:26:15.970262 #8012]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:26:15.970262 #8012]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:26:16.011264 #8012] DEBUG -- :   [1m[35mAccount Load (1.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:26:16.186274 #8012] ERROR -- : xxxxxx[{"id"=>"13901", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Black Marianne", "remote_iban"=>"DE26844843586112417701", "remote_bic"=>"UINVDEFF"}, "subject"=>"Autoscooter Budget - Kirmes Dresden", "amount"=>112334, "currency"=>nil, "booking_date"=>"2014-11-11", "value_date"=>"2014-11-12", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:48 UTC", "updated_at"=>"2014-12-12 09:08:48 UTC"}, {"id"=>"13902", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Down Ellen", "remote_iban"=>"DE72965563127674898541", "remote_bic"=>"PARBDEFFBRE"}, "subject"=>"Auszahlung Tantieme 1126612", "amount"=>64483, "currency"=>nil, "booking_date"=>"2014-09-29", "value_date"=>"2014-09-30", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13903", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Jesus", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"UINVDEFF"}, "subject"=>"Gehalt 1077672", "amount"=>159098, "currency"=>nil, "booking_date"=>"2014-11-14", "value_date"=>"2014-11-15", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13904", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Gerold", "remote_iban"=>"DE02029018103622205188", "remote_bic"=>"PARBDEFFISI"}, "subject"=>"Lohn 447010", "amount"=>86069, "currency"=>nil, "booking_date"=>"2014-09-17", "value_date"=>"2014-09-18", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13905", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Pellham Marianne", "remote_iban"=>"DE26943527764940823364", "remote_bic"=>"CITIDEFFKEL"}, "subject"=>"Verkauf Ebay 727180", "amount"=>50162, "currency"=>nil, "booking_date"=>"2014-10-10", "value_date"=>"2014-10-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13906", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Anna", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Pokerturniergewinn Casino Berchtesgaden", "amount"=>107149, "currency"=>nil, "booking_date"=>"2014-10-31", "value_date"=>"2014-11-01", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13907", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Steht Horst", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Rückzahlung Auslage 1039329", "amount"=>171590, "currency"=>nil, "booking_date"=>"2014-11-13", "value_date"=>"2014-11-14", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13908", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Motzi Pauline", "remote_iban"=>"DE08474121590232607273", "remote_bic"=>"CITIDE55SEC"}, "subject"=>"Schmiergeld von Heinz ***", "amount"=>4536, "currency"=>nil, "booking_date"=>"2014-12-05", "value_date"=>"2014-12-06", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13909", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Spencer Paul", "remote_iban"=>"DE12521758158911675030", "remote_bic"=>"CXCXDEDD"}, "subject"=>"Kindergeld vom kleinen Bud", "amount"=>52128, "currency"=>nil, "booking_date"=>"2014-09-21", "value_date"=>"2014-09-22", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13910", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Bogen Bill", "remote_iban"=>"DE10837933364388507214", "remote_bic"=>"HYVEDEMM393"}, "subject"=>"Auszahlung Tantieme 1110957", "amount"=>128929, "currency"=>nil, "booking_date"=>"2014-12-10", "value_date"=>"2014-12-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}]xxxxx
+I, [2015-01-26T13:26:16.249278 #8012]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (18.0ms)
+I, [2015-01-26T13:26:16.249278 #8012]  INFO -- : Completed 500 Internal Server Error in 279ms
+F, [2015-01-26T13:26:16.252278 #8012] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:     <tbody>
+    13: 	  <% @transactions.each do |transaction|%>
+    14:         <tr>
+    15:           <td><%= @transaction.id%></td>
+    16:         </tr>
+    17:       <% end %>
+    18:     </tbody>
+  app/views/transactions/index.html.erb:15:in `block in _app_views_transactions_index_html_erb__904864290_30755700'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__904864290_30755700'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:26:16.282280 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:26:16.292280 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:26:16.292280 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+D, [2015-01-26T13:26:20.331343 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:20.331343 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:20.331343 #8012]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:26:20 +0100
+I, [2015-01-26T13:26:20.346943 #8012]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:26:20.346943 #8012]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:26:20.362543 #8012] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+E, [2015-01-26T13:26:20.493550 #8012] ERROR -- : xxxxxx[{"id"=>"13901", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Black Marianne", "remote_iban"=>"DE26844843586112417701", "remote_bic"=>"UINVDEFF"}, "subject"=>"Autoscooter Budget - Kirmes Dresden", "amount"=>112334, "currency"=>nil, "booking_date"=>"2014-11-11", "value_date"=>"2014-11-12", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:48 UTC", "updated_at"=>"2014-12-12 09:08:48 UTC"}, {"id"=>"13902", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Down Ellen", "remote_iban"=>"DE72965563127674898541", "remote_bic"=>"PARBDEFFBRE"}, "subject"=>"Auszahlung Tantieme 1126612", "amount"=>64483, "currency"=>nil, "booking_date"=>"2014-09-29", "value_date"=>"2014-09-30", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13903", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Jesus", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"UINVDEFF"}, "subject"=>"Gehalt 1077672", "amount"=>159098, "currency"=>nil, "booking_date"=>"2014-11-14", "value_date"=>"2014-11-15", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13904", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Gerold", "remote_iban"=>"DE02029018103622205188", "remote_bic"=>"PARBDEFFISI"}, "subject"=>"Lohn 447010", "amount"=>86069, "currency"=>nil, "booking_date"=>"2014-09-17", "value_date"=>"2014-09-18", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13905", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Pellham Marianne", "remote_iban"=>"DE26943527764940823364", "remote_bic"=>"CITIDEFFKEL"}, "subject"=>"Verkauf Ebay 727180", "amount"=>50162, "currency"=>nil, "booking_date"=>"2014-10-10", "value_date"=>"2014-10-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13906", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Anna", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Pokerturniergewinn Casino Berchtesgaden", "amount"=>107149, "currency"=>nil, "booking_date"=>"2014-10-31", "value_date"=>"2014-11-01", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13907", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Steht Horst", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Rückzahlung Auslage 1039329", "amount"=>171590, "currency"=>nil, "booking_date"=>"2014-11-13", "value_date"=>"2014-11-14", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13908", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Motzi Pauline", "remote_iban"=>"DE08474121590232607273", "remote_bic"=>"CITIDE55SEC"}, "subject"=>"Schmiergeld von Heinz ***", "amount"=>4536, "currency"=>nil, "booking_date"=>"2014-12-05", "value_date"=>"2014-12-06", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13909", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Spencer Paul", "remote_iban"=>"DE12521758158911675030", "remote_bic"=>"CXCXDEDD"}, "subject"=>"Kindergeld vom kleinen Bud", "amount"=>52128, "currency"=>nil, "booking_date"=>"2014-09-21", "value_date"=>"2014-09-22", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13910", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Bogen Bill", "remote_iban"=>"DE10837933364388507214", "remote_bic"=>"HYVEDEMM393"}, "subject"=>"Auszahlung Tantieme 1110957", "amount"=>128929, "currency"=>nil, "booking_date"=>"2014-12-10", "value_date"=>"2014-12-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}]xxxxx
+I, [2015-01-26T13:26:20.502551 #8012]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (2.0ms)
+I, [2015-01-26T13:26:20.502551 #8012]  INFO -- : Completed 500 Internal Server Error in 156ms
+F, [2015-01-26T13:26:20.506551 #8012] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:     <tbody>
+    13: 	  <% @transactions.each do |transaction|%>
+    14:         <tr>
+    15:           <td><%= @transaction.id%></td>
+    16:         </tr>
+    17:       <% end %>
+    18:     </tbody>
+  app/views/transactions/index.html.erb:15:in `block in _app_views_transactions_index_html_erb__904864290_30755700'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__904864290_30755700'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:26:20.536553 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:26:20.547553 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:26:20.548553 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+D, [2015-01-26T13:26:22.245374 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:22.245374 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:22.245374 #8012]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:26:22 +0100
+I, [2015-01-26T13:26:22.273975 #8012]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:26:22.273975 #8012]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:26:22.276975 #8012] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:26:22.406983 #8012] ERROR -- : xxxxxx[{"id"=>"13901", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Black Marianne", "remote_iban"=>"DE26844843586112417701", "remote_bic"=>"UINVDEFF"}, "subject"=>"Autoscooter Budget - Kirmes Dresden", "amount"=>112334, "currency"=>nil, "booking_date"=>"2014-11-11", "value_date"=>"2014-11-12", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:48 UTC", "updated_at"=>"2014-12-12 09:08:48 UTC"}, {"id"=>"13902", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Down Ellen", "remote_iban"=>"DE72965563127674898541", "remote_bic"=>"PARBDEFFBRE"}, "subject"=>"Auszahlung Tantieme 1126612", "amount"=>64483, "currency"=>nil, "booking_date"=>"2014-09-29", "value_date"=>"2014-09-30", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13903", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Jesus", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"UINVDEFF"}, "subject"=>"Gehalt 1077672", "amount"=>159098, "currency"=>nil, "booking_date"=>"2014-11-14", "value_date"=>"2014-11-15", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13904", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Gerold", "remote_iban"=>"DE02029018103622205188", "remote_bic"=>"PARBDEFFISI"}, "subject"=>"Lohn 447010", "amount"=>86069, "currency"=>nil, "booking_date"=>"2014-09-17", "value_date"=>"2014-09-18", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13905", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Pellham Marianne", "remote_iban"=>"DE26943527764940823364", "remote_bic"=>"CITIDEFFKEL"}, "subject"=>"Verkauf Ebay 727180", "amount"=>50162, "currency"=>nil, "booking_date"=>"2014-10-10", "value_date"=>"2014-10-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13906", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Anna", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Pokerturniergewinn Casino Berchtesgaden", "amount"=>107149, "currency"=>nil, "booking_date"=>"2014-10-31", "value_date"=>"2014-11-01", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13907", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Steht Horst", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Rückzahlung Auslage 1039329", "amount"=>171590, "currency"=>nil, "booking_date"=>"2014-11-13", "value_date"=>"2014-11-14", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13908", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Motzi Pauline", "remote_iban"=>"DE08474121590232607273", "remote_bic"=>"CITIDE55SEC"}, "subject"=>"Schmiergeld von Heinz ***", "amount"=>4536, "currency"=>nil, "booking_date"=>"2014-12-05", "value_date"=>"2014-12-06", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13909", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Spencer Paul", "remote_iban"=>"DE12521758158911675030", "remote_bic"=>"CXCXDEDD"}, "subject"=>"Kindergeld vom kleinen Bud", "amount"=>52128, "currency"=>nil, "booking_date"=>"2014-09-21", "value_date"=>"2014-09-22", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13910", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Bogen Bill", "remote_iban"=>"DE10837933364388507214", "remote_bic"=>"HYVEDEMM393"}, "subject"=>"Auszahlung Tantieme 1110957", "amount"=>128929, "currency"=>nil, "booking_date"=>"2014-12-10", "value_date"=>"2014-12-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}]xxxxx
+I, [2015-01-26T13:26:22.414983 #8012]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (2.0ms)
+I, [2015-01-26T13:26:22.415983 #8012]  INFO -- : Completed 500 Internal Server Error in 140ms
+F, [2015-01-26T13:26:22.418983 #8012] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:     <tbody>
+    13: 	  <% @transactions.each do |transaction|%>
+    14:         <tr>
+    15:           <td><%= @transaction.id%></td>
+    16:         </tr>
+    17:       <% end %>
+    18:     </tbody>
+  app/views/transactions/index.html.erb:15:in `block in _app_views_transactions_index_html_erb__904864290_30755700'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__904864290_30755700'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:26:22.448985 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:26:22.458986 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:26:22.458986 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+D, [2015-01-26T13:26:32.843638 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:32.843638 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:32.843638 #8012]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:26:32 +0100
+I, [2015-01-26T13:26:32.872239 #8012]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:26:32.873239 #8012]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:26:32.875239 #8012] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+E, [2015-01-26T13:26:33.006247 #8012] ERROR -- : xxxxxx[{"id"=>"13901", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Black Marianne", "remote_iban"=>"DE26844843586112417701", "remote_bic"=>"UINVDEFF"}, "subject"=>"Autoscooter Budget - Kirmes Dresden", "amount"=>112334, "currency"=>nil, "booking_date"=>"2014-11-11", "value_date"=>"2014-11-12", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:48 UTC", "updated_at"=>"2014-12-12 09:08:48 UTC"}, {"id"=>"13902", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Down Ellen", "remote_iban"=>"DE72965563127674898541", "remote_bic"=>"PARBDEFFBRE"}, "subject"=>"Auszahlung Tantieme 1126612", "amount"=>64483, "currency"=>nil, "booking_date"=>"2014-09-29", "value_date"=>"2014-09-30", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13903", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Jesus", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"UINVDEFF"}, "subject"=>"Gehalt 1077672", "amount"=>159098, "currency"=>nil, "booking_date"=>"2014-11-14", "value_date"=>"2014-11-15", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13904", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Gerold", "remote_iban"=>"DE02029018103622205188", "remote_bic"=>"PARBDEFFISI"}, "subject"=>"Lohn 447010", "amount"=>86069, "currency"=>nil, "booking_date"=>"2014-09-17", "value_date"=>"2014-09-18", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13905", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Pellham Marianne", "remote_iban"=>"DE26943527764940823364", "remote_bic"=>"CITIDEFFKEL"}, "subject"=>"Verkauf Ebay 727180", "amount"=>50162, "currency"=>nil, "booking_date"=>"2014-10-10", "value_date"=>"2014-10-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13906", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Anna", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Pokerturniergewinn Casino Berchtesgaden", "amount"=>107149, "currency"=>nil, "booking_date"=>"2014-10-31", "value_date"=>"2014-11-01", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13907", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Steht Horst", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Rückzahlung Auslage 1039329", "amount"=>171590, "currency"=>nil, "booking_date"=>"2014-11-13", "value_date"=>"2014-11-14", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13908", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Motzi Pauline", "remote_iban"=>"DE08474121590232607273", "remote_bic"=>"CITIDE55SEC"}, "subject"=>"Schmiergeld von Heinz ***", "amount"=>4536, "currency"=>nil, "booking_date"=>"2014-12-05", "value_date"=>"2014-12-06", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13909", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Spencer Paul", "remote_iban"=>"DE12521758158911675030", "remote_bic"=>"CXCXDEDD"}, "subject"=>"Kindergeld vom kleinen Bud", "amount"=>52128, "currency"=>nil, "booking_date"=>"2014-09-21", "value_date"=>"2014-09-22", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13910", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Bogen Bill", "remote_iban"=>"DE10837933364388507214", "remote_bic"=>"HYVEDEMM393"}, "subject"=>"Auszahlung Tantieme 1110957", "amount"=>128929, "currency"=>nil, "booking_date"=>"2014-12-10", "value_date"=>"2014-12-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}]xxxxx
+I, [2015-01-26T13:26:33.014247 #8012]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (2.0ms)
+I, [2015-01-26T13:26:33.015247 #8012]  INFO -- : Completed 500 Internal Server Error in 142ms
+F, [2015-01-26T13:26:33.018247 #8012] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:     <tbody>
+    13: 	  <% @transactions.each do |transaction|%>
+    14:         <tr>
+    15:           <td><%= @transaction.id%></td>
+    16:         </tr>
+    17:       <% end %>
+    18:     </tbody>
+  app/views/transactions/index.html.erb:15:in `block in _app_views_transactions_index_html_erb__904864290_30755700'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__904864290_30755700'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:26:33.048249 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:26:33.059250 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:26:33.060250 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+D, [2015-01-26T13:26:36.408488 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:36.408488 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:36.409488 #8012]  INFO -- : Started GET "/assets/facelift/shared/icon/glyphicons-halflings.png" for 127.0.0.1 at 2015-01-26 13:26:36 +0100
+D, [2015-01-26T13:26:44.837736 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:44.837736 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:44.837736 #8012]  INFO -- : Started GET "/accounts/90" for 127.0.0.1 at 2015-01-26 13:26:44 +0100
+I, [2015-01-26T13:26:44.869936 #8012]  INFO -- : Processing by AccountsController#show as HTML
+I, [2015-01-26T13:26:44.869936 #8012]  INFO -- :   Parameters: {"id"=>"90"}
+D, [2015-01-26T13:26:44.869936 #8012] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 90 LIMIT 1
+E, [2015-01-26T13:26:45.006737 #8012] ERROR -- : Encountered an error with the response received -Not Found
+I, [2015-01-26T13:26:45.014737 #8012]  INFO -- :   Rendered accounts/show.html.erb within layouts/application (1.0ms)
+I, [2015-01-26T13:26:45.373939 #8012]  INFO -- :   Rendered layouts/_header.html.erb (15.6ms)
+I, [2015-01-26T13:26:45.373939 #8012]  INFO -- :   Rendered layouts/_footer.html.erb (0.0ms)
+I, [2015-01-26T13:26:45.373939 #8012]  INFO -- : Completed 200 OK in 504ms (Views: 366.2ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:26:45.424739 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:45.427739 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:45.428739 #8012]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:26:45 +0100
+I, [2015-01-26T13:26:45.442740 #8012]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:26:45.443740 #8012]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:26:45.447740 #8012]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:26:45.447740 #8012]  INFO -- : Completed 404 Not Found in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:26:45.447740 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:45.447740 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:45.447740 #8012]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:26:45 +0100
+I, [2015-01-26T13:26:45.483941 #8012]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:26:45.483941 #8012]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:26:45.484941 #8012]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:26:45.485941 #8012]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:26:45.486941 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:45.486941 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:45.486941 #8012]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:26:45 +0100
+I, [2015-01-26T13:26:45.497941 #8012]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:26:45.498941 #8012]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:26:45.499942 #8012]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:26:45.499942 #8012]  INFO -- : Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:26:47.990157 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:47.990157 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:47.990157 #8012]  INFO -- : Started GET "/accounts" for 127.0.0.1 at 2015-01-26 13:26:47 +0100
+I, [2015-01-26T13:26:48.026357 #8012]  INFO -- : Processing by AccountsController#index as HTML
+D, [2015-01-26T13:26:48.026357 #8012] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `accounts`  LIMIT 5 OFFSET 0) subquery_for_count[0m
+D, [2015-01-26T13:26:48.026357 #8012] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  LIMIT 5 OFFSET 0
+D, [2015-01-26T13:26:48.041957 #8012] DEBUG -- :   [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM `accounts`[0m
+I, [2015-01-26T13:26:48.041957 #8012]  INFO -- :   Rendered accounts/index.html.erb within layouts/application (15.6ms)
+I, [2015-01-26T13:26:48.220959 #8012]  INFO -- :   Rendered layouts/_header.html.erb (0.0ms)
+I, [2015-01-26T13:26:48.220959 #8012]  INFO -- :   Rendered layouts/_footer.html.erb (0.0ms)
+I, [2015-01-26T13:26:48.220959 #8012]  INFO -- : Completed 200 OK in 195ms (Views: 194.6ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:26:48.252159 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:48.252159 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:48.252159 #8012]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:26:48 +0100
+I, [2015-01-26T13:26:48.278760 #8012]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:26:48.278760 #8012]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:26:48.280760 #8012]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:26:48.281760 #8012]  INFO -- : Completed 404 Not Found in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:26:48.282760 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:48.283760 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:48.283760 #8012]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:26:48 +0100
+I, [2015-01-26T13:26:48.312761 #8012]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:26:48.312761 #8012]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:26:48.313762 #8012]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:26:48.313762 #8012]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:26:48.313762 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:48.313762 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:48.313762 #8012]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:26:48 +0100
+I, [2015-01-26T13:26:48.313762 #8012]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:26:48.313762 #8012]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:26:48.313762 #8012]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:26:48.313762 #8012]  INFO -- : Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:26:52.658600 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:52.658600 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:52.658600 #8012]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:26:52 +0100
+I, [2015-01-26T13:26:52.688201 #8012]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:26:52.689201 #8012]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:26:52.690201 #8012] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:26:52.828407 #8012] ERROR -- : xxxxxx[{"id"=>"13901", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Black Marianne", "remote_iban"=>"DE26844843586112417701", "remote_bic"=>"UINVDEFF"}, "subject"=>"Autoscooter Budget - Kirmes Dresden", "amount"=>112334, "currency"=>nil, "booking_date"=>"2014-11-11", "value_date"=>"2014-11-12", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:48 UTC", "updated_at"=>"2014-12-12 09:08:48 UTC"}, {"id"=>"13902", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Down Ellen", "remote_iban"=>"DE72965563127674898541", "remote_bic"=>"PARBDEFFBRE"}, "subject"=>"Auszahlung Tantieme 1126612", "amount"=>64483, "currency"=>nil, "booking_date"=>"2014-09-29", "value_date"=>"2014-09-30", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13903", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Jesus", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"UINVDEFF"}, "subject"=>"Gehalt 1077672", "amount"=>159098, "currency"=>nil, "booking_date"=>"2014-11-14", "value_date"=>"2014-11-15", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13904", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Gerold", "remote_iban"=>"DE02029018103622205188", "remote_bic"=>"PARBDEFFISI"}, "subject"=>"Lohn 447010", "amount"=>86069, "currency"=>nil, "booking_date"=>"2014-09-17", "value_date"=>"2014-09-18", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13905", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Pellham Marianne", "remote_iban"=>"DE26943527764940823364", "remote_bic"=>"CITIDEFFKEL"}, "subject"=>"Verkauf Ebay 727180", "amount"=>50162, "currency"=>nil, "booking_date"=>"2014-10-10", "value_date"=>"2014-10-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13906", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Anna", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Pokerturniergewinn Casino Berchtesgaden", "amount"=>107149, "currency"=>nil, "booking_date"=>"2014-10-31", "value_date"=>"2014-11-01", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13907", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Steht Horst", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Rückzahlung Auslage 1039329", "amount"=>171590, "currency"=>nil, "booking_date"=>"2014-11-13", "value_date"=>"2014-11-14", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13908", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Motzi Pauline", "remote_iban"=>"DE08474121590232607273", "remote_bic"=>"CITIDE55SEC"}, "subject"=>"Schmiergeld von Heinz ***", "amount"=>4536, "currency"=>nil, "booking_date"=>"2014-12-05", "value_date"=>"2014-12-06", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13909", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Spencer Paul", "remote_iban"=>"DE12521758158911675030", "remote_bic"=>"CXCXDEDD"}, "subject"=>"Kindergeld vom kleinen Bud", "amount"=>52128, "currency"=>nil, "booking_date"=>"2014-09-21", "value_date"=>"2014-09-22", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13910", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Bogen Bill", "remote_iban"=>"DE10837933364388507214", "remote_bic"=>"HYVEDEMM393"}, "subject"=>"Auszahlung Tantieme 1110957", "amount"=>128929, "currency"=>nil, "booking_date"=>"2014-12-10", "value_date"=>"2014-12-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}]xxxxx
+I, [2015-01-26T13:26:52.828407 #8012]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (0.0ms)
+I, [2015-01-26T13:26:52.828407 #8012]  INFO -- : Completed 500 Internal Server Error in 139ms
+F, [2015-01-26T13:26:52.828407 #8012] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:     <tbody>
+    13: 	  <% @transactions.each do |transaction|%>
+    14:         <tr>
+    15:           <td><%= @transaction.id%></td>
+    16:         </tr>
+    17:       <% end %>
+    18:     </tbody>
+  app/views/transactions/index.html.erb:15:in `block in _app_views_transactions_index_html_erb__904864290_30755700'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__904864290_30755700'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:26:52.859607 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+I, [2015-01-26T13:26:52.875207 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+I, [2015-01-26T13:26:52.875207 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.6ms)
+D, [2015-01-26T13:26:52.890807 #8012] DEBUG -- : 
+D, [2015-01-26T13:26:52.890807 #8012] DEBUG -- : 
+I, [2015-01-26T13:26:52.890807 #8012]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:26:52 +0100
+I, [2015-01-26T13:26:52.890807 #8012]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:26:52.890807 #8012]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:26:52.890807 #8012] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+E, [2015-01-26T13:26:53.025013 #8012] ERROR -- : xxxxxx[{"id"=>"13901", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Black Marianne", "remote_iban"=>"DE26844843586112417701", "remote_bic"=>"UINVDEFF"}, "subject"=>"Autoscooter Budget - Kirmes Dresden", "amount"=>112334, "currency"=>nil, "booking_date"=>"2014-11-11", "value_date"=>"2014-11-12", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:48 UTC", "updated_at"=>"2014-12-12 09:08:48 UTC"}, {"id"=>"13902", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Down Ellen", "remote_iban"=>"DE72965563127674898541", "remote_bic"=>"PARBDEFFBRE"}, "subject"=>"Auszahlung Tantieme 1126612", "amount"=>64483, "currency"=>nil, "booking_date"=>"2014-09-29", "value_date"=>"2014-09-30", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13903", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Jesus", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"UINVDEFF"}, "subject"=>"Gehalt 1077672", "amount"=>159098, "currency"=>nil, "booking_date"=>"2014-11-14", "value_date"=>"2014-11-15", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13904", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Gerold", "remote_iban"=>"DE02029018103622205188", "remote_bic"=>"PARBDEFFISI"}, "subject"=>"Lohn 447010", "amount"=>86069, "currency"=>nil, "booking_date"=>"2014-09-17", "value_date"=>"2014-09-18", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13905", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Pellham Marianne", "remote_iban"=>"DE26943527764940823364", "remote_bic"=>"CITIDEFFKEL"}, "subject"=>"Verkauf Ebay 727180", "amount"=>50162, "currency"=>nil, "booking_date"=>"2014-10-10", "value_date"=>"2014-10-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13906", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Anna", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Pokerturniergewinn Casino Berchtesgaden", "amount"=>107149, "currency"=>nil, "booking_date"=>"2014-10-31", "value_date"=>"2014-11-01", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13907", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Steht Horst", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Rückzahlung Auslage 1039329", "amount"=>171590, "currency"=>nil, "booking_date"=>"2014-11-13", "value_date"=>"2014-11-14", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13908", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Motzi Pauline", "remote_iban"=>"DE08474121590232607273", "remote_bic"=>"CITIDE55SEC"}, "subject"=>"Schmiergeld von Heinz ***", "amount"=>4536, "currency"=>nil, "booking_date"=>"2014-12-05", "value_date"=>"2014-12-06", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13909", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Spencer Paul", "remote_iban"=>"DE12521758158911675030", "remote_bic"=>"CXCXDEDD"}, "subject"=>"Kindergeld vom kleinen Bud", "amount"=>52128, "currency"=>nil, "booking_date"=>"2014-09-21", "value_date"=>"2014-09-22", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}, {"id"=>"13910", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Bogen Bill", "remote_iban"=>"DE10837933364388507214", "remote_bic"=>"HYVEDEMM393"}, "subject"=>"Auszahlung Tantieme 1110957", "amount"=>128929, "currency"=>nil, "booking_date"=>"2014-12-10", "value_date"=>"2014-12-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}]xxxxx
+I, [2015-01-26T13:26:53.034014 #8012]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (2.0ms)
+I, [2015-01-26T13:26:53.035014 #8012]  INFO -- : Completed 500 Internal Server Error in 143ms
+F, [2015-01-26T13:26:53.038014 #8012] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:     <tbody>
+    13: 	  <% @transactions.each do |transaction|%>
+    14:         <tr>
+    15:           <td><%= @transaction.id%></td>
+    16:         </tr>
+    17:       <% end %>
+    18:     </tbody>
+  app/views/transactions/index.html.erb:15:in `block in _app_views_transactions_index_html_erb__904864290_30755700'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__904864290_30755700'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:26:53.084016 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:26:53.094017 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:26:53.095017 #8012]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+D, [2015-01-26T13:28:09.467423 #6160] DEBUG -- : 
+D, [2015-01-26T13:28:09.467423 #6160] DEBUG -- : 
+I, [2015-01-26T13:28:09.468423 #6160]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:28:09 +0100
+D, [2015-01-26T13:28:10.072458 #6160] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2015-01-26T13:28:10.129461 #6160]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:28:10.130461 #6160]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:28:10.186464 #6160] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:28:10.320472 #6160] ERROR -- : xxxxxx{"id"=>"13901", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Black Marianne", "remote_iban"=>"DE26844843586112417701", "remote_bic"=>"UINVDEFF"}, "subject"=>"Autoscooter Budget - Kirmes Dresden", "amount"=>112334, "currency"=>nil, "booking_date"=>"2014-11-11", "value_date"=>"2014-11-12", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:48 UTC", "updated_at"=>"2014-12-12 09:08:48 UTC"}xxxxx
+E, [2015-01-26T13:28:10.321472 #6160] ERROR -- : xxxxxx{"id"=>"13902", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Down Ellen", "remote_iban"=>"DE72965563127674898541", "remote_bic"=>"PARBDEFFBRE"}, "subject"=>"Auszahlung Tantieme 1126612", "amount"=>64483, "currency"=>nil, "booking_date"=>"2014-09-29", "value_date"=>"2014-09-30", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}xxxxx
+E, [2015-01-26T13:28:10.321472 #6160] ERROR -- : xxxxxx{"id"=>"13903", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Jesus", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"UINVDEFF"}, "subject"=>"Gehalt 1077672", "amount"=>159098, "currency"=>nil, "booking_date"=>"2014-11-14", "value_date"=>"2014-11-15", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}xxxxx
+E, [2015-01-26T13:28:10.322472 #6160] ERROR -- : xxxxxx{"id"=>"13904", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Gerold", "remote_iban"=>"DE02029018103622205188", "remote_bic"=>"PARBDEFFISI"}, "subject"=>"Lohn 447010", "amount"=>86069, "currency"=>nil, "booking_date"=>"2014-09-17", "value_date"=>"2014-09-18", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}xxxxx
+E, [2015-01-26T13:28:10.322472 #6160] ERROR -- : xxxxxx{"id"=>"13905", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Pellham Marianne", "remote_iban"=>"DE26943527764940823364", "remote_bic"=>"CITIDEFFKEL"}, "subject"=>"Verkauf Ebay 727180", "amount"=>50162, "currency"=>nil, "booking_date"=>"2014-10-10", "value_date"=>"2014-10-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}xxxxx
+E, [2015-01-26T13:28:10.323472 #6160] ERROR -- : xxxxxx{"id"=>"13906", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Sabbert Anna", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Pokerturniergewinn Casino Berchtesgaden", "amount"=>107149, "currency"=>nil, "booking_date"=>"2014-10-31", "value_date"=>"2014-11-01", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}xxxxx
+E, [2015-01-26T13:28:10.323472 #6160] ERROR -- : xxxxxx{"id"=>"13907", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Steht Horst", "remote_iban"=>"DE12951162581902389071", "remote_bic"=>"PARBDEFH"}, "subject"=>"Rückzahlung Auslage 1039329", "amount"=>171590, "currency"=>nil, "booking_date"=>"2014-11-13", "value_date"=>"2014-11-14", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}xxxxx
+E, [2015-01-26T13:28:10.324472 #6160] ERROR -- : xxxxxx{"id"=>"13908", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Motzi Pauline", "remote_iban"=>"DE08474121590232607273", "remote_bic"=>"CITIDE55SEC"}, "subject"=>"Schmiergeld von Heinz ***", "amount"=>4536, "currency"=>nil, "booking_date"=>"2014-12-05", "value_date"=>"2014-12-06", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}xxxxx
+E, [2015-01-26T13:28:10.324472 #6160] ERROR -- : xxxxxx{"id"=>"13909", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Spencer Paul", "remote_iban"=>"DE12521758158911675030", "remote_bic"=>"CXCXDEDD"}, "subject"=>"Kindergeld vom kleinen Bud", "amount"=>52128, "currency"=>nil, "booking_date"=>"2014-09-21", "value_date"=>"2014-09-22", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}xxxxx
+E, [2015-01-26T13:28:10.325472 #6160] ERROR -- : xxxxxx{"id"=>"13910", "account_id"=>"534", "transaction_type"=>"payin_credit_note_sepa", "transaction_type_details"=>{"sepa_credit_transfer_id"=>nil, "remote_name"=>"Bogen Bill", "remote_iban"=>"DE10837933364388507214", "remote_bic"=>"HYVEDEMM393"}, "subject"=>"Auszahlung Tantieme 1110957", "amount"=>128929, "currency"=>nil, "booking_date"=>"2014-12-10", "value_date"=>"2014-12-11", "booking_code"=>nil, "return_transaction_id"=>nil, "created_at"=>"2014-12-12 09:08:49 UTC", "updated_at"=>"2014-12-12 09:08:49 UTC"}xxxxx
+I, [2015-01-26T13:28:10.385476 #6160]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (31.0ms)
+I, [2015-01-26T13:28:10.385476 #6160]  INFO -- : Completed 500 Internal Server Error in 255ms
+F, [2015-01-26T13:28:10.388476 #6160] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:     <tbody>
+    13: 	  <% @transactions.each do |transaction|%>
+    14:         <tr>
+    15:           <td><%= @transaction.id%></td>
+    16:         </tr>
+    17:       <% end %>
+    18:     </tbody>
+  app/views/transactions/index.html.erb:15:in `block in _app_views_transactions_index_html_erb__914135064_43795092'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__914135064_43795092'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:28:10.417478 #6160]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:28:10.427478 #6160]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:28:10.427478 #6160]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+D, [2015-01-26T13:29:52.232322 #7860] DEBUG -- : 
+D, [2015-01-26T13:29:52.232322 #7860] DEBUG -- : 
+I, [2015-01-26T13:29:52.233322 #7860]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:29:52 +0100
+D, [2015-01-26T13:29:52.850357 #7860] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2015-01-26T13:29:52.905360 #7860]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:29:52.905360 #7860]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:29:52.961363 #7860] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+I, [2015-01-26T13:29:53.109372 #7860]  INFO -- : Completed 500 Internal Server Error in 202ms
+F, [2015-01-26T13:29:53.111372 #7860] FATAL -- : 
+NoMethodError (undefined method `id' for #<Hash:0x39f3b58>):
+  lib/OAuth.rb:50:in `block (2 levels) in get_transactions'
+  lib/OAuth.rb:50:in `block in get_transactions'
+  lib/OAuth.rb:49:in `each'
+  lib/OAuth.rb:49:in `get_transactions'
+  app/controllers/transactions_controller.rb:10:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:29:53.189377 #7860]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+I, [2015-01-26T13:29:53.198377 #7860]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:29:53.208378 #7860]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+I, [2015-01-26T13:29:53.208378 #7860]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+D, [2015-01-26T13:31:03.784128 #908] DEBUG -- : 
+D, [2015-01-26T13:31:03.784128 #908] DEBUG -- : 
+I, [2015-01-26T13:31:03.797129 #908]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:31:03 +0100
+D, [2015-01-26T13:31:04.421164 #908] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2015-01-26T13:31:04.481168 #908]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:31:04.481168 #908]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:31:04.525170 #908] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:31:04.692180 #908] ERROR -- : zzzz13901zzzzzz
+E, [2015-01-26T13:31:04.692180 #908] ERROR -- : zzzz13902zzzzzz
+E, [2015-01-26T13:31:04.693180 #908] ERROR -- : zzzz13903zzzzzz
+E, [2015-01-26T13:31:04.693180 #908] ERROR -- : zzzz13904zzzzzz
+E, [2015-01-26T13:31:04.693180 #908] ERROR -- : zzzz13905zzzzzz
+E, [2015-01-26T13:31:04.693180 #908] ERROR -- : zzzz13906zzzzzz
+E, [2015-01-26T13:31:04.693180 #908] ERROR -- : zzzz13907zzzzzz
+E, [2015-01-26T13:31:04.693180 #908] ERROR -- : zzzz13908zzzzzz
+E, [2015-01-26T13:31:04.694180 #908] ERROR -- : zzzz13909zzzzzz
+E, [2015-01-26T13:31:04.694180 #908] ERROR -- : zzzz13910zzzzzz
+I, [2015-01-26T13:31:04.742183 #908]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (18.0ms)
+I, [2015-01-26T13:31:04.742183 #908]  INFO -- : Completed 500 Internal Server Error in 260ms
+F, [2015-01-26T13:31:04.745183 #908] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:     <tbody>
+    13: 	  <% @transactions.each do |transaction|%>
+    14:         <tr>
+    15:           <td><%= @transaction.id%></td>
+    16:         </tr>
+    17:       <% end %>
+    18:     </tbody>
+  app/views/transactions/index.html.erb:15:in `block in _app_views_transactions_index_html_erb___617823755_30518652'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb___617823755_30518652'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:31:04.791185 #908]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:31:04.801186 #908]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:31:04.801186 #908]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+D, [2015-01-26T13:32:17.358375 #5948] DEBUG -- : 
+D, [2015-01-26T13:32:17.358375 #5948] DEBUG -- : 
+I, [2015-01-26T13:32:17.359375 #5948]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:32:17 +0100
+D, [2015-01-26T13:32:17.974410 #5948] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+I, [2015-01-26T13:32:18.030413 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:32:18.031413 #5948]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:32:18.070416 #5948] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:32:18.219424 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:32:18.267427 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (18.0ms)
+I, [2015-01-26T13:32:18.268427 #5948]  INFO -- : Completed 500 Internal Server Error in 236ms
+F, [2015-01-26T13:32:18.271427 #5948] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:     <tbody>
+    13: 	  <% @transactions.each do |transaction|%>
+    14:         <tr>
+    15:           <td><%= @transaction.id%></td>
+    16:         </tr>
+    17:       <% end %>
+    18:     </tbody>
+  app/views/transactions/index.html.erb:15:in `block in _app_views_transactions_index_html_erb__737922590_43030164'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__737922590_43030164'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:32:18.314430 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:32:18.324430 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:32:18.324430 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.0ms)
+D, [2015-01-26T13:32:56.529914 #5948] DEBUG -- : 
+D, [2015-01-26T13:32:56.529914 #5948] DEBUG -- : 
+I, [2015-01-26T13:32:56.529914 #5948]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:32:56 +0100
+I, [2015-01-26T13:32:56.619518 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:32:56.620518 #5948]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:32:56.632519 #5948] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+E, [2015-01-26T13:32:56.774527 #5948] ERROR -- : zzzz10zzzzzz
+E, [2015-01-26T13:32:56.774527 #5948] ERROR -- : xxx10xxxx
+I, [2015-01-26T13:32:56.783527 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (2.0ms)
+I, [2015-01-26T13:32:56.784527 #5948]  INFO -- : Completed 500 Internal Server Error in 163ms
+F, [2015-01-26T13:32:56.786528 #5948] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    12:     <tbody>
+    13: 	  <% @transactions.each do |transaction|%>
+    14:         <tr>
+    15:           <td><%= @transaction.id%></td>
+    16:         </tr>
+    17:       <% end %>
+    18:     </tbody>
+  app/views/transactions/index.html.erb:15:in `block in _app_views_transactions_index_html_erb__737922590_43030164'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__737922590_43030164'
+  app/controllers/transactions_controller.rb:12:in `index'
+  app/controllers/transactions_controller.rb:23:in `oauth_exception'
+
+
+I, [2015-01-26T13:32:56.817529 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:32:56.827530 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:32:56.828530 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+D, [2015-01-26T13:33:38.132226 #5948] DEBUG -- : 
+D, [2015-01-26T13:33:38.132226 #5948] DEBUG -- : 
+I, [2015-01-26T13:33:38.132226 #5948]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:33:38 +0100
+I, [2015-01-26T13:33:38.206428 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:33:38.207428 #5948]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:33:38.219429 #5948] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:33:38.352436 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:33:38.361437 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (3.0ms)
+I, [2015-01-26T13:33:38.378438 #5948]  INFO -- : Completed 500 Internal Server Error in 170ms
+F, [2015-01-26T13:33:38.381438 #5948] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    13: 	  <% @transactions.each do |transaction|%>
+    14: 	  Rails.logger.error {"zzzz#{transactions.size}zzzzzz"}
+    15:         <tr>
+    16:           <td><%= @transaction.id%></td>
+    17:         </tr>
+    18:       <% end %>
+    19:     </tbody>
+  app/views/transactions/index.html.erb:16:in `block in _app_views_transactions_index_html_erb__737922590_44218884'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__737922590_44218884'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:33:38.411440 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:33:38.421440 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:33:38.422440 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+D, [2015-01-26T13:33:56.917482 #5948] DEBUG -- : 
+D, [2015-01-26T13:33:56.917482 #5948] DEBUG -- : 
+I, [2015-01-26T13:33:56.917482 #5948]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:33:56 +0100
+I, [2015-01-26T13:33:56.945083 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:33:56.946083 #5948]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:33:56.948083 #5948] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+E, [2015-01-26T13:33:57.112092 #5948] ERROR -- : zzzz10zzzzzz
+E, [2015-01-26T13:33:57.119093 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:33:57.122093 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (3.0ms)
+I, [2015-01-26T13:33:57.122093 #5948]  INFO -- : Completed 500 Internal Server Error in 176ms
+F, [2015-01-26T13:33:57.125093 #5948] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    13: 	  <% @transactions.each do |transaction|%>
+    14: 	 <% Rails.logger.error {"zzzz#{@transactions.size}zzzzzz"}%>
+    15:         <tr>
+    16:           <td><%= @transaction.id%></td>
+    17:         </tr>
+    18:       <% end %>
+    19:     </tbody>
+  app/views/transactions/index.html.erb:16:in `block in _app_views_transactions_index_html_erb__737922590_29616372'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__737922590_29616372'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:33:57.155095 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:33:57.165095 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:33:57.166095 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+D, [2015-01-26T13:33:58.335106 #5948] DEBUG -- : 
+D, [2015-01-26T13:33:58.335106 #5948] DEBUG -- : 
+I, [2015-01-26T13:33:58.335106 #5948]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:33:58 +0100
+I, [2015-01-26T13:33:58.335106 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:33:58.335106 #5948]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:33:58.350706 #5948] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:33:58.518716 #5948] ERROR -- : zzzz10zzzzzz
+E, [2015-01-26T13:33:58.524716 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:33:58.527716 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (3.0ms)
+I, [2015-01-26T13:33:58.527716 #5948]  INFO -- : Completed 500 Internal Server Error in 193ms
+F, [2015-01-26T13:33:58.530716 #5948] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    13: 	  <% @transactions.each do |transaction|%>
+    14: 	 <% Rails.logger.error {"zzzz#{@transactions.size}zzzzzz"}%>
+    15:         <tr>
+    16:           <td><%= @transaction.id%></td>
+    17:         </tr>
+    18:       <% end %>
+    19:     </tbody>
+  app/views/transactions/index.html.erb:16:in `block in _app_views_transactions_index_html_erb__737922590_29616372'
+  app/views/transactions/index.html.erb:13:in `each'
+  app/views/transactions/index.html.erb:13:in `_app_views_transactions_index_html_erb__737922590_29616372'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:33:58.575719 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:33:58.585720 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:33:58.586720 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+D, [2015-01-26T13:34:19.919565 #5948] DEBUG -- : 
+D, [2015-01-26T13:34:19.919565 #5948] DEBUG -- : 
+I, [2015-01-26T13:34:19.919565 #5948]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:34:19 +0100
+I, [2015-01-26T13:34:19.946166 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:34:19.947166 #5948]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:34:19.949166 #5948] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+E, [2015-01-26T13:34:20.079174 #5948] ERROR -- : zzzz10zzzzzz
+E, [2015-01-26T13:34:20.085174 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:34:20.088174 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (3.0ms)
+I, [2015-01-26T13:34:20.089174 #5948]  INFO -- : Completed 500 Internal Server Error in 141ms
+F, [2015-01-26T13:34:20.092174 #5948] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    13: 	<% Rails.logger.error {"zzzz#{@transactions.size}zzzzzz"}%>
+    14: 	  <% @transactions.each do |transaction|%>
+    15:         <tr>
+    16:           <td><%= @transaction.id%></td>
+    17:         </tr>
+    18:       <% end %>
+    19:     </tbody>
+  app/views/transactions/index.html.erb:16:in `block in _app_views_transactions_index_html_erb__737922590_29636676'
+  app/views/transactions/index.html.erb:14:in `each'
+  app/views/transactions/index.html.erb:14:in `_app_views_transactions_index_html_erb__737922590_29636676'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:34:20.121176 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:34:20.132177 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:34:20.133177 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+D, [2015-01-26T13:34:20.985984 #5948] DEBUG -- : 
+D, [2015-01-26T13:34:20.985984 #5948] DEBUG -- : 
+I, [2015-01-26T13:34:20.985984 #5948]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:34:20 +0100
+I, [2015-01-26T13:34:20.985984 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:34:20.985984 #5948]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:34:20.985984 #5948] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:34:21.129190 #5948] ERROR -- : zzzz10zzzzzz
+E, [2015-01-26T13:34:21.135191 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:34:21.138191 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (3.0ms)
+I, [2015-01-26T13:34:21.138191 #5948]  INFO -- : Completed 500 Internal Server Error in 152ms
+F, [2015-01-26T13:34:21.141191 #5948] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    13: 	<% Rails.logger.error {"zzzz#{@transactions.size}zzzzzz"}%>
+    14: 	  <% @transactions.each do |transaction|%>
+    15:         <tr>
+    16:           <td><%= @transaction.id%></td>
+    17:         </tr>
+    18:       <% end %>
+    19:     </tbody>
+  app/views/transactions/index.html.erb:16:in `block in _app_views_transactions_index_html_erb__737922590_29636676'
+  app/views/transactions/index.html.erb:14:in `each'
+  app/views/transactions/index.html.erb:14:in `_app_views_transactions_index_html_erb__737922590_29636676'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:34:21.189194 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:34:21.199194 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:34:21.199194 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+D, [2015-01-26T13:34:41.413843 #5948] DEBUG -- : 
+D, [2015-01-26T13:34:41.413843 #5948] DEBUG -- : 
+I, [2015-01-26T13:34:41.413843 #5948]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:34:41 +0100
+I, [2015-01-26T13:34:41.413843 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:34:41.413843 #5948]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:34:41.444444 #5948] DEBUG -- :   [1m[36mAccount Load (1.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+E, [2015-01-26T13:34:41.573451 #5948] ERROR -- : zzzz10zzzzzz
+E, [2015-01-26T13:34:41.579451 #5948] ERROR -- : xxxx10xxxx
+I, [2015-01-26T13:34:41.582451 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (4.0ms)
+I, [2015-01-26T13:34:41.583452 #5948]  INFO -- : Completed 500 Internal Server Error in 142ms
+F, [2015-01-26T13:34:41.586452 #5948] FATAL -- : 
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    13: 	<% Rails.logger.error {"xxxx#{@transactions.size}xxxx"}%>
+    14: 	  <% @transactions.each do |transaction|%>
+    15:         <tr>
+    16:           <td><%= @transaction.id%></td>
+    17:         </tr>
+    18:       <% end %>
+    19:     </tbody>
+  app/views/transactions/index.html.erb:16:in `block in _app_views_transactions_index_html_erb__737922590_29436348'
+  app/views/transactions/index.html.erb:14:in `each'
+  app/views/transactions/index.html.erb:14:in `_app_views_transactions_index_html_erb__737922590_29436348'
+  app/controllers/transactions_controller.rb:11:in `index'
+  app/controllers/transactions_controller.rb:22:in `oauth_exception'
+
+
+I, [2015-01-26T13:34:41.616453 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+I, [2015-01-26T13:34:41.627454 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2015-01-26T13:34:41.628454 #5948]  INFO -- :   Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.0ms)
+D, [2015-01-26T13:35:08.929317 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:08.929317 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:08.929317 #5948]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:35:08 +0100
+I, [2015-01-26T13:35:08.929317 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:35:08.929317 #5948]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:35:08.929317 #5948] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:35:09.081925 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:35:09.088925 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (1.0ms)
+I, [2015-01-26T13:35:09.478947 #5948]  INFO -- :   Rendered layouts/_header.html.erb (12.0ms)
+I, [2015-01-26T13:35:09.481948 #5948]  INFO -- :   Rendered layouts/_footer.html.erb (1.0ms)
+I, [2015-01-26T13:35:09.481948 #5948]  INFO -- : Completed 200 OK in 553ms (Views: 400.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:09.521950 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.521950 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.522950 #5948]  INFO -- : Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.541951 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.541951 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.541951 #5948]  INFO -- : Started GET "/assets/transactions.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.568953 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.569953 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.570953 #5948]  INFO -- : Started GET "/assets/four_o_four.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.583953 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.584953 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.585954 #5948]  INFO -- : Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.611955 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.613955 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.613955 #5948]  INFO -- : Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.628956 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.628956 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.630956 #5948]  INFO -- : Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.642957 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.657958 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.658958 #5948]  INFO -- : Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.688959 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.689959 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.689959 #5948]  INFO -- : Started GET "/assets/facelift/unit-facelift.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.727962 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.728962 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.728962 #5948]  INFO -- : Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.758963 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.758963 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.759963 #5948]  INFO -- : Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.773964 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.774964 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.775964 #5948]  INFO -- : Started GET "/assets/facelift/base.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.805966 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.805966 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.807966 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.819967 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.819967 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.822967 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.848969 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.849969 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.851969 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.863969 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.865970 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.865970 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.877970 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.879970 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.879970 #5948]  INFO -- : Started GET "/assets/facelift/facelift.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.914972 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.915972 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.916972 #5948]  INFO -- : Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.943974 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.944974 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.944974 #5948]  INFO -- : Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.960975 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.961975 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.961975 #5948]  INFO -- : Started GET "/assets/four_o_four.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:09.972976 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:09.972976 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:09.974976 #5948]  INFO -- : Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:09 +0100
+D, [2015-01-26T13:35:10.001977 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.002977 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.003977 #5948]  INFO -- : Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+D, [2015-01-26T13:35:10.015978 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.015978 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.016978 #5948]  INFO -- : Started GET "/assets/transactions.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+D, [2015-01-26T13:35:10.028979 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.028979 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.045980 #5948]  INFO -- : Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+D, [2015-01-26T13:35:10.070981 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.070981 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.070981 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+I, [2015-01-26T13:35:10.115984 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:10.116984 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:35:10.125984 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:10.128985 #5948]  INFO -- : Completed 404 Not Found in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:10.132985 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.133985 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.136985 #5948]  INFO -- : Started GET "/assets/facelift/shared/font/fidor-icons.woff?-3tyck5" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+D, [2015-01-26T13:35:10.158986 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.158986 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.159986 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-html.png" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+D, [2015-01-26T13:35:10.195988 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.197989 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.198989 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/icon-settings.png" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+D, [2015-01-26T13:35:10.213989 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.215990 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.215990 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/basic-sprites.png" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+D, [2015-01-26T13:35:10.229990 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.229990 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.230990 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+I, [2015-01-26T13:35:10.256992 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:10.256992 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:35:10.257992 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:10.258992 #5948]  INFO -- : Completed 404 Not Found in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:10.259992 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.259992 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.260992 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+I, [2015-01-26T13:35:10.270993 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:10.270993 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:35:10.271993 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:10.271993 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:10.272993 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.272993 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.273993 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-pattern-blackpaper.png" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+D, [2015-01-26T13:35:10.300994 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:10.300994 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:10.300994 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-highlight-footer.png" for 127.0.0.1 at 2015-01-26 13:35:10 +0100
+D, [2015-01-26T13:35:47.236312 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.236312 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.236312 #5948]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+I, [2015-01-26T13:35:47.261912 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:35:47.261912 #5948]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:35:47.264913 #5948] DEBUG -- :   [1m[36mAccount Load (1.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+E, [2015-01-26T13:35:47.393920 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:35:47.400920 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (1.0ms)
+I, [2015-01-26T13:35:47.570930 #5948]  INFO -- :   Rendered layouts/_header.html.erb (0.0ms)
+I, [2015-01-26T13:35:47.572930 #5948]  INFO -- :   Rendered layouts/_footer.html.erb (0.0ms)
+I, [2015-01-26T13:35:47.573930 #5948]  INFO -- : Completed 200 OK in 310ms (Views: 179.0ms | ActiveRecord: 1.0ms)
+D, [2015-01-26T13:35:47.614933 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.618933 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.620933 #5948]  INFO -- : Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.631934 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.631934 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.634934 #5948]  INFO -- : Started GET "/assets/four_o_four.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.666936 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.667936 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.667936 #5948]  INFO -- : Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.683936 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.685937 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.686937 #5948]  INFO -- : Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.711938 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.712938 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.714938 #5948]  INFO -- : Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.724939 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.724939 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.726939 #5948]  INFO -- : Started GET "/assets/transactions.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.736940 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.736940 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.737940 #5948]  INFO -- : Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.767941 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.768941 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.769941 #5948]  INFO -- : Started GET "/assets/facelift/unit-facelift.css?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.784942 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.784942 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.785942 #5948]  INFO -- : Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.796943 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.797943 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.798943 #5948]  INFO -- : Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.826945 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.827945 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.830945 #5948]  INFO -- : Started GET "/assets/facelift/base.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.839945 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.840945 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.841946 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.866947 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.867947 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.867947 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.878948 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.879948 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.879948 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.890948 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.891948 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.893948 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.918950 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.920950 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.922950 #5948]  INFO -- : Started GET "/assets/facelift/facelift.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.932951 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.934951 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.935951 #5948]  INFO -- : Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.945951 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.946952 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.947952 #5948]  INFO -- : Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.975953 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.975953 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.977953 #5948]  INFO -- : Started GET "/assets/four_o_four.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:47.986954 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:47.987954 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:47.988954 #5948]  INFO -- : Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:47 +0100
+D, [2015-01-26T13:35:48.013955 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.013955 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.014955 #5948]  INFO -- : Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+D, [2015-01-26T13:35:48.024956 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.024956 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.025956 #5948]  INFO -- : Started GET "/assets/transactions.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+D, [2015-01-26T13:35:48.034957 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.035957 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.035957 #5948]  INFO -- : Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+D, [2015-01-26T13:35:48.074959 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.074959 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.076959 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+I, [2015-01-26T13:35:48.088960 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:48.089960 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:35:48.091960 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:48.091960 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:48.093960 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.097960 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.098960 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+I, [2015-01-26T13:35:48.111961 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:48.111961 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:35:48.133962 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:48.134962 #5948]  INFO -- : Completed 404 Not Found in 2ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:48.138963 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.139963 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.139963 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+I, [2015-01-26T13:35:48.151963 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:48.153963 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:35:48.154963 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:48.154963 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:48.155963 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.156964 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.156964 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-html.png" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+D, [2015-01-26T13:35:48.166964 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.166964 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.168964 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/icon-settings.png" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+D, [2015-01-26T13:35:48.195966 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.197966 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.197966 #5948]  INFO -- : Started GET "/assets/facelift/shared/font/fidor-icons.woff?-3tyck5" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+D, [2015-01-26T13:35:48.208967 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.209967 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.209967 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/basic-sprites.png" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+D, [2015-01-26T13:35:48.222967 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.222967 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.223967 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-pattern-blackpaper.png" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+D, [2015-01-26T13:35:48.255969 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:48.255969 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:48.256969 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-highlight-footer.png" for 127.0.0.1 at 2015-01-26 13:35:48 +0100
+D, [2015-01-26T13:35:49.689185 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:49.689185 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:49.689185 #5948]  INFO -- : Started GET "/accounts" for 127.0.0.1 at 2015-01-26 13:35:49 +0100
+I, [2015-01-26T13:35:49.705785 #5948]  INFO -- : Processing by AccountsController#index as HTML
+D, [2015-01-26T13:35:49.705785 #5948] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `accounts`  LIMIT 5 OFFSET 0) subquery_for_count
+D, [2015-01-26T13:35:49.705785 #5948] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  LIMIT 5 OFFSET 0[0m
+D, [2015-01-26T13:35:49.705785 #5948] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `accounts`
+I, [2015-01-26T13:35:49.736985 #5948]  INFO -- :   Rendered accounts/index.html.erb within layouts/application (31.2ms)
+I, [2015-01-26T13:35:49.915986 #5948]  INFO -- :   Rendered layouts/_header.html.erb (0.0ms)
+I, [2015-01-26T13:35:49.915986 #5948]  INFO -- :   Rendered layouts/_footer.html.erb (0.0ms)
+I, [2015-01-26T13:35:49.915986 #5948]  INFO -- : Completed 200 OK in 210ms (Views: 210.2ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:49.956187 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:49.956187 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:49.957187 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:35:49 +0100
+I, [2015-01-26T13:35:49.969188 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:49.969188 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:35:49.973188 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:49.974188 #5948]  INFO -- : Completed 404 Not Found in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:49.976188 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:49.976188 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:49.977188 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:35:49 +0100
+I, [2015-01-26T13:35:49.988189 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:49.988189 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:35:50.008190 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:50.008190 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:50.009190 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:50.009190 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:50.010190 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:35:50 +0100
+I, [2015-01-26T13:35:50.021191 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:50.021191 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:35:50.022191 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:50.023191 #5948]  INFO -- : Completed 404 Not Found in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:50.024191 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:50.024191 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:50.025191 #5948]  INFO -- : Started GET "/assets/facelift/shared/icon/glyphicons-halflings-white.png" for 127.0.0.1 at 2015-01-26 13:35:50 +0100
+D, [2015-01-26T13:35:50.038192 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:50.038192 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:50.039192 #5948]  INFO -- : Started GET "/assets/facelift/shared/icon/glyphicons-halflings.png" for 127.0.0.1 at 2015-01-26 13:35:50 +0100
+D, [2015-01-26T13:35:51.462596 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:51.462596 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:51.462596 #5948]  INFO -- : Started GET "/accounts/89" for 127.0.0.1 at 2015-01-26 13:35:51 +0100
+I, [2015-01-26T13:35:51.462596 #5948]  INFO -- : Processing by AccountsController#show as HTML
+I, [2015-01-26T13:35:51.462596 #5948]  INFO -- :   Parameters: {"id"=>"89"}
+D, [2015-01-26T13:35:51.478196 #5948] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+I, [2015-01-26T13:35:51.609997 #5948]  INFO -- :   Rendered accounts/show.html.erb within layouts/application (0.0ms)
+I, [2015-01-26T13:35:51.786597 #5948]  INFO -- :   Rendered layouts/_header.html.erb (0.0ms)
+I, [2015-01-26T13:35:51.786597 #5948]  INFO -- :   Rendered layouts/_footer.html.erb (0.0ms)
+I, [2015-01-26T13:35:51.786597 #5948]  INFO -- : Completed 200 OK in 324ms (Views: 176.6ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:51.817797 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:51.817797 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:51.817797 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:35:51 +0100
+I, [2015-01-26T13:35:51.851398 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:51.851398 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:35:51.851398 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:51.851398 #5948]  INFO -- : Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:51.851398 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:51.851398 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:51.851398 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:35:51 +0100
+I, [2015-01-26T13:35:51.866998 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:51.866998 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:35:51.866998 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:51.866998 #5948]  INFO -- : Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:51.866998 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:51.866998 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:51.866998 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:35:51 +0100
+I, [2015-01-26T13:35:51.887599 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:51.887599 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:35:51.888599 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:51.888599 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:53.045604 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:53.065205 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:53.065205 #5948]  INFO -- : Started GET "/accounts" for 127.0.0.1 at 2015-01-26 13:35:53 +0100
+I, [2015-01-26T13:35:53.066205 #5948]  INFO -- : Processing by AccountsController#index as HTML
+D, [2015-01-26T13:35:53.081805 #5948] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `accounts`  LIMIT 5 OFFSET 0) subquery_for_count
+D, [2015-01-26T13:35:53.081805 #5948] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  LIMIT 5 OFFSET 0[0m
+D, [2015-01-26T13:35:53.081805 #5948] DEBUG -- :   [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM `accounts`
+I, [2015-01-26T13:35:53.081805 #5948]  INFO -- :   Rendered accounts/index.html.erb within layouts/application (0.0ms)
+I, [2015-01-26T13:35:53.253207 #5948]  INFO -- :   Rendered layouts/_header.html.erb (0.0ms)
+I, [2015-01-26T13:35:53.253207 #5948]  INFO -- :   Rendered layouts/_footer.html.erb (0.0ms)
+I, [2015-01-26T13:35:53.253207 #5948]  INFO -- : Completed 200 OK in 187ms (Views: 187.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:53.300007 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:53.300007 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:53.300007 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:35:53 +0100
+I, [2015-01-26T13:35:53.321607 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:53.321607 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:35:53.322607 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:53.322607 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:53.323607 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:53.323607 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:53.324607 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:35:53 +0100
+I, [2015-01-26T13:35:53.355609 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:53.355609 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:35:53.356609 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:53.357609 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:53.358609 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:53.358609 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:53.359609 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:35:53 +0100
+I, [2015-01-26T13:35:53.368610 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:53.368610 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:35:53.369610 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:53.369610 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:54.769427 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:54.769427 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:54.769427 #5948]  INFO -- : Started GET "/accounts/89/transactions" for 127.0.0.1 at 2015-01-26 13:35:54 +0100
+I, [2015-01-26T13:35:54.792027 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:35:54.792027 #5948]  INFO -- :   Parameters: {"account_id"=>"89"}
+D, [2015-01-26T13:35:54.792027 #5948] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+E, [2015-01-26T13:35:54.932428 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:35:54.932428 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (0.0ms)
+I, [2015-01-26T13:35:55.111231 #5948]  INFO -- :   Rendered layouts/_header.html.erb (0.0ms)
+I, [2015-01-26T13:35:55.111231 #5948]  INFO -- :   Rendered layouts/_footer.html.erb (0.0ms)
+I, [2015-01-26T13:35:55.111231 #5948]  INFO -- : Completed 200 OK in 319ms (Views: 178.8ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:55.151431 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:55.155432 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:55.156432 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:35:55 +0100
+I, [2015-01-26T13:35:55.165432 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:55.166432 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:35:55.167432 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:55.167432 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:55.168432 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:55.168432 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:55.168432 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:35:55 +0100
+I, [2015-01-26T13:35:55.168432 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:55.168432 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:35:55.168432 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:55.168432 #5948]  INFO -- : Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:35:55.199633 #5948] DEBUG -- : 
+D, [2015-01-26T13:35:55.200633 #5948] DEBUG -- : 
+I, [2015-01-26T13:35:55.200633 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:35:55 +0100
+I, [2015-01-26T13:35:55.201633 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:35:55.201633 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:35:55.201633 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:35:55.201633 #5948]  INFO -- : Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:03.088061 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:03.088061 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:03.088061 #5948]  INFO -- : Started GET "/accounts/89/transactions?locale=de" for 127.0.0.1 at 2015-01-26 13:36:03 +0100
+I, [2015-01-26T13:36:03.105661 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:36:03.105661 #5948]  INFO -- :   Parameters: {"locale"=>"de", "account_id"=>"89"}
+D, [2015-01-26T13:36:03.105661 #5948] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:36:03.248061 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:36:03.248061 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (0.0ms)
+I, [2015-01-26T13:36:03.423662 #5948]  INFO -- :   Rendered layouts/_header.html.erb (0.0ms)
+I, [2015-01-26T13:36:03.423662 #5948]  INFO -- :   Rendered layouts/_footer.html.erb (0.0ms)
+I, [2015-01-26T13:36:03.423662 #5948]  INFO -- : Completed 200 OK in 318ms (Views: 175.6ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:03.456862 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:03.457862 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:03.457862 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:36:03 +0100
+I, [2015-01-26T13:36:03.474863 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:36:03.476863 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:36:03.477863 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:36:03.478863 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:03.479863 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:03.479863 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:03.479863 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:36:03 +0100
+I, [2015-01-26T13:36:03.509865 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:36:03.509865 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:36:03.510865 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:36:03.511865 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:03.512865 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:03.512865 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:03.512865 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:36:03 +0100
+I, [2015-01-26T13:36:03.521866 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:36:03.522866 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:36:03.522866 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:36:03.523866 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:04.222673 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:04.222673 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:04.222673 #5948]  INFO -- : Started GET "/accounts/89/transactions?locale=en" for 127.0.0.1 at 2015-01-26 13:36:04 +0100
+I, [2015-01-26T13:36:04.254873 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:36:04.254873 #5948]  INFO -- :   Parameters: {"locale"=>"en", "account_id"=>"89"}
+D, [2015-01-26T13:36:04.254873 #5948] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+E, [2015-01-26T13:36:04.381074 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:36:04.381074 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (0.0ms)
+I, [2015-01-26T13:36:04.555675 #5948]  INFO -- :   Rendered layouts/_header.html.erb (0.0ms)
+I, [2015-01-26T13:36:04.555675 #5948]  INFO -- :   Rendered layouts/_footer.html.erb (0.0ms)
+I, [2015-01-26T13:36:04.555675 #5948]  INFO -- : Completed 200 OK in 301ms (Views: 174.6ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:04.589875 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:04.590875 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:04.590875 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:36:04 +0100
+I, [2015-01-26T13:36:04.610876 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:36:04.612876 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:36:04.615876 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:36:04.615876 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:04.616876 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:04.617876 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:04.617876 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:36:04 +0100
+I, [2015-01-26T13:36:04.627877 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:36:04.628877 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:36:04.631877 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:36:04.633877 #5948]  INFO -- : Completed 404 Not Found in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:04.635878 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:04.635878 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:04.650878 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:36:04 +0100
+I, [2015-01-26T13:36:04.650878 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:36:04.650878 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:36:04.650878 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:36:04.650878 #5948]  INFO -- : Completed 404 Not Found in 0ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:25.181118 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.181118 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.181118 #5948]  INFO -- : Started GET "/accounts/89/transactions?locale=en" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+I, [2015-01-26T13:36:25.196718 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:36:25.196718 #5948]  INFO -- :   Parameters: {"locale"=>"en", "account_id"=>"89"}
+D, [2015-01-26T13:36:25.214318 #5948] DEBUG -- :   [1m[35mAccount Load (0.0ms)[0m  SELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1
+E, [2015-01-26T13:36:25.343325 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:36:25.350326 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (1.0ms)
+I, [2015-01-26T13:36:25.524336 #5948]  INFO -- :   Rendered layouts/_header.html.erb (0.0ms)
+I, [2015-01-26T13:36:25.526336 #5948]  INFO -- :   Rendered layouts/_footer.html.erb (0.0ms)
+I, [2015-01-26T13:36:25.526336 #5948]  INFO -- : Completed 200 OK in 314ms (Views: 183.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:25.559338 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.559338 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.560338 #5948]  INFO -- : Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.575339 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.580339 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.580339 #5948]  INFO -- : Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.606341 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.606341 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.608341 #5948]  INFO -- : Started GET "/assets/transactions.css?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.618341 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.619341 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.620341 #5948]  INFO -- : Started GET "/assets/four_o_four.css?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.631342 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.632342 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.634342 #5948]  INFO -- : Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.658344 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.659344 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.661344 #5948]  INFO -- : Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.671344 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.672344 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.672344 #5948]  INFO -- : Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.689345 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.689345 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.690345 #5948]  INFO -- : Started GET "/assets/facelift/unit-facelift.css?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.721347 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.721347 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.722347 #5948]  INFO -- : Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.734348 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.735348 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.738348 #5948]  INFO -- : Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.764350 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.765350 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.766350 #5948]  INFO -- : Started GET "/assets/facelift/base.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.776350 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.777350 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.777350 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.788351 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.788351 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.791351 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.815352 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.816353 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.816353 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.828353 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.828353 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.829353 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.840354 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.840354 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.841354 #5948]  INFO -- : Started GET "/assets/facelift/facelift.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.868356 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.870356 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.870356 #5948]  INFO -- : Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.880356 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.881356 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.888357 #5948]  INFO -- : Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.913358 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.915358 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.915358 #5948]  INFO -- : Started GET "/assets/four_o_four.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.925359 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.925359 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.926359 #5948]  INFO -- : Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.935359 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.936359 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.936359 #5948]  INFO -- : Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.961361 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.961361 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.962361 #5948]  INFO -- : Started GET "/assets/transactions.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.971361 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.972361 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.972361 #5948]  INFO -- : Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+D, [2015-01-26T13:36:25.988362 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:25.988362 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:25.988362 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:36:25 +0100
+I, [2015-01-26T13:36:26.022364 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:36:26.023364 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:36:26.024364 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:36:26.028365 #5948]  INFO -- : Completed 404 Not Found in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:26.029365 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:26.033365 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:26.035365 #5948]  INFO -- : Started GET "/assets/facelift/shared/font/fidor-icons.woff?-3tyck5" for 127.0.0.1 at 2015-01-26 13:36:26 +0100
+D, [2015-01-26T13:36:26.055366 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:26.056366 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:26.056366 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-html.png" for 127.0.0.1 at 2015-01-26 13:36:26 +0100
+D, [2015-01-26T13:36:26.086368 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:26.087368 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:26.087368 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/icon-settings.png" for 127.0.0.1 at 2015-01-26 13:36:26 +0100
+D, [2015-01-26T13:36:26.099369 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:26.099369 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:26.103369 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/basic-sprites.png" for 127.0.0.1 at 2015-01-26 13:36:26 +0100
+D, [2015-01-26T13:36:26.114370 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:26.114370 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:26.114370 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:36:26 +0100
+I, [2015-01-26T13:36:26.141371 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:36:26.141371 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:36:26.142371 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:36:26.142371 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:26.144371 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:26.144371 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:26.144371 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:36:26 +0100
+I, [2015-01-26T13:36:26.154372 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:36:26.154372 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:36:26.155372 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:36:26.155372 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:36:26.156372 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:26.156372 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:26.157372 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-pattern-blackpaper.png" for 127.0.0.1 at 2015-01-26 13:36:26 +0100
+D, [2015-01-26T13:36:26.166373 #5948] DEBUG -- : 
+D, [2015-01-26T13:36:26.167373 #5948] DEBUG -- : 
+I, [2015-01-26T13:36:26.167373 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-highlight-footer.png" for 127.0.0.1 at 2015-01-26 13:36:26 +0100
+D, [2015-01-26T13:38:41.223832 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.223832 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.223832 #5948]  INFO -- : Started GET "/accounts/89/transactions?locale=en" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+I, [2015-01-26T13:38:41.223832 #5948]  INFO -- : Processing by TransactionsController#index as HTML
+I, [2015-01-26T13:38:41.223832 #5948]  INFO -- :   Parameters: {"locale"=>"en", "account_id"=>"89"}
+D, [2015-01-26T13:38:41.240432 #5948] DEBUG -- :   [1m[36mAccount Load (0.0ms)[0m  [1mSELECT  `accounts`.* FROM `accounts`  WHERE `accounts`.`id` = 89 LIMIT 1[0m
+E, [2015-01-26T13:38:41.369439 #5948] ERROR -- : zzzz10zzzzzz
+I, [2015-01-26T13:38:41.377440 #5948]  INFO -- :   Rendered transactions/index.html.erb within layouts/application (1.0ms)
+I, [2015-01-26T13:38:41.564450 #5948]  INFO -- :   Rendered layouts/_header.html.erb (0.0ms)
+I, [2015-01-26T13:38:41.567451 #5948]  INFO -- :   Rendered layouts/_footer.html.erb (0.0ms)
+I, [2015-01-26T13:38:41.567451 #5948]  INFO -- : Completed 200 OK in 344ms (Views: 198.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:38:41.599452 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.599452 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.600453 #5948]  INFO -- : Started GET "/assets/accounts.css?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.631454 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.634454 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.635455 #5948]  INFO -- : Started GET "/assets/four_o_four.css?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.646455 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.646455 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.647455 #5948]  INFO -- : Started GET "/assets/payments.css?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.658456 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.658456 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.659456 #5948]  INFO -- : Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.685457 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.685457 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.686457 #5948]  INFO -- : Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.697458 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.697458 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.697458 #5948]  INFO -- : Started GET "/assets/transactions.css?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.724460 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.724460 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.724460 #5948]  INFO -- : Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.740461 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.741461 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.742461 #5948]  INFO -- : Started GET "/assets/facelift/unit-facelift.css?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.758462 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.760462 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.762462 #5948]  INFO -- : Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.789463 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.789463 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.790463 #5948]  INFO -- : Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.801464 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.802464 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.802464 #5948]  INFO -- : Started GET "/assets/facelift/base.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.814465 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.815465 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.846467 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.856467 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.858467 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.858467 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-tab.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.868468 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.868468 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.869468 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.894469 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.897470 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.897470 #5948]  INFO -- : Started GET "/assets/facelift/vendor/bootstrap-popover.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.907470 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.909470 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.910470 #5948]  INFO -- : Started GET "/assets/facelift/facelift.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.920471 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.922471 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.924471 #5948]  INFO -- : Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.950473 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.951473 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.953473 #5948]  INFO -- : Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.965473 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.966473 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.968474 #5948]  INFO -- : Started GET "/assets/four_o_four.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:41.977474 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:41.977474 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:41.978474 #5948]  INFO -- : Started GET "/assets/payments.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:41 +0100
+D, [2015-01-26T13:38:42.002476 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.003476 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.003476 #5948]  INFO -- : Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:42 +0100
+D, [2015-01-26T13:38:42.013476 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.014476 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.014476 #5948]  INFO -- : Started GET "/assets/transactions.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:42 +0100
+D, [2015-01-26T13:38:42.024477 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.024477 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.040478 #5948]  INFO -- : Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-01-26 13:38:42 +0100
+D, [2015-01-26T13:38:42.068479 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.069479 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.069479 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-pays.png" for 127.0.0.1 at 2015-01-26 13:38:42 +0100
+I, [2015-01-26T13:38:42.081480 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:38:42.083480 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-pays"}
+I, [2015-01-26T13:38:42.084480 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:38:42.086480 #5948]  INFO -- : Completed 404 Not Found in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:38:42.088480 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.091481 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.091481 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-bank.png" for 127.0.0.1 at 2015-01-26 13:38:42 +0100
+I, [2015-01-26T13:38:42.122482 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:38:42.123482 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-bank"}
+I, [2015-01-26T13:38:42.124482 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:38:42.124482 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:38:42.125483 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.125483 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.126483 #5948]  INFO -- : Started GET "/public/styleguide/facelift/layouts/facelift/footer-fidor-tecs.png" for 127.0.0.1 at 2015-01-26 13:38:42 +0100
+I, [2015-01-26T13:38:42.135483 #5948]  INFO -- : Processing by FourOFourController#index as PNG
+I, [2015-01-26T13:38:42.135483 #5948]  INFO -- :   Parameters: {"path"=>"public/styleguide/facelift/layouts/facelift/footer-fidor-tecs"}
+I, [2015-01-26T13:38:42.136483 #5948]  INFO -- :   Rendered text template (0.0ms)
+I, [2015-01-26T13:38:42.136483 #5948]  INFO -- : Completed 404 Not Found in 1ms (Views: 0.0ms | ActiveRecord: 0.0ms)
+D, [2015-01-26T13:38:42.138483 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.139483 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.139483 #5948]  INFO -- : Started GET "/assets/facelift/shared/font/fidor-icons.woff?-3tyck5" for 127.0.0.1 at 2015-01-26 13:38:42 +0100
+D, [2015-01-26T13:38:42.165485 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.165485 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.165485 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-html.png" for 127.0.0.1 at 2015-01-26 13:38:42 +0100
+D, [2015-01-26T13:38:42.178486 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.179486 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.180486 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/basic-sprites.png" for 127.0.0.1 at 2015-01-26 13:38:42 +0100
+D, [2015-01-26T13:38:42.190486 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.191486 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.191486 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/icon-settings.png" for 127.0.0.1 at 2015-01-26 13:38:42 +0100
+D, [2015-01-26T13:38:42.223488 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.223488 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.223488 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-pattern-blackpaper.png" for 127.0.0.1 at 2015-01-26 13:38:42 +0100
+D, [2015-01-26T13:38:42.235489 #5948] DEBUG -- : 
+D, [2015-01-26T13:38:42.236489 #5948] DEBUG -- : 
+I, [2015-01-26T13:38:42.236489 #5948]  INFO -- : Started GET "/assets/facelift/layouts/facelift/background-highlight-footer.png" for 127.0.0.1 at 2015-01-26 13:38:42 +0100

@@ -1,0 +1,19 @@
+<%= form_for (@payment),:url => mtan_confirm_payment_path, :html=>{:class =>'form-vertical'} do |f| %>
+  <legend><%= t('views.payments.show.page_mtan_title') %></legend>
+  <% if flash[:notice] %>
+    <div id="error_explanation" class="alert alert-error alert-block">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <h4><%= flash[:notice] %></h4>
+    </div>
+  <% end %>
+  <p><%= t('views.payments.show.page_mtan_teaser') %></p>
+  <div class="control-group">
+    <label class="control-label" for="name">mTan</label>
+    <div class="controls">
+      <input type="text" id="name" name="mtan" />
+    </div>
+  </div>
+  <div class="form-actions rimless">
+    <input class="btn btn-green" type="submit" value="<%= t('views.payments.show.page_mtan_button') %>" />
+  </div>
+<% end %>

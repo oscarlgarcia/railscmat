@@ -1,0 +1,91 @@
+<div id="header">
+    <div class="row" id="header-navigation">
+      <div class="span12">
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <div class="container">
+              <div class="nav-collapse">
+                <ul class="nav">
+                  <li class="dropdown" data-dropdown="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      1st Global App <b class="caret"><!--//--></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Item</a></li>
+                      <li><a href="#">Item</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown" data-dropdown="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      2nd Global App <b class="caret"><!--//--></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Item</a></li>
+                      <li><a href="#">Item</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown" data-dropdown="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      3rd Global App <b class="caret"><!--//--></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Item</a></li>
+                      <li><a href="#">Item</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="nav pull-right">
+                  <li class="dropdown" data-dropdown="dropdown" id="myaccount-dropdown">
+                    <a href="#" class="dropdown-toggle display-inline avatar-holder" data-toggle="dropdown">
+                      <img alt="" class="img-circle" src="http://placehold.it/30x30"> <%= session[:email] %>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li class="nav-header">
+                        <%= session[:email] %><br/>Fidor-ID: <%= session[:id] %>
+                      </li>
+					            <li>
+                        <%= link_to t('views.accounts.name') , accounts_path %>
+                      </li>
+                      <li>
+                        <%= link_to "Payments", payments_path if session[:access_right] == "write"%>  
+                      </li>
+                      <li class="divider"></li>
+                      <li><%= link_to t('views.session.logout.name') , logout_path %></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span5">
+        <h1>
+          <a href="/" accesskey="1">
+            <strong>Company Name</strong>
+          </a>
+        </h1>
+      </div>
+      <div class="span7">
+        <ul id="navigation-service">
+          <li><span>  <%= session[:token]  %> </span></li>
+          <li><%= language_selector %></li>
+          <li><a href="#">Item</a></li>
+          <li><a href="#">Item</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <ul id="navigation-social-media">
+      <li class="facebook"><a href="http://www.facebook.com/fidorbank" title="Fidor Bank Facebook-Seite">Facebook</a></li>
+      <li class="twitter"><a href="http://twitter.com/ficoba" title="Folge der Fidor Bank auf Twitter">Twitter</a></li>
+      <li class="youtube"><a href="http://www.youtube.com/user/FidorCommBanking" title="Videobeiträge der Fidor Bank auf YouTube">YouTube</a></li>
+      <li class="googleplus"><a href="https://www.fidor.de/+" title="Folge der Fidor Bank auf Google+">Google+</a></li>
+    </ul>
+ </div>
+ <div id="main">
+   <div id="section">
+     <div id="article" class="container">

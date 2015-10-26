@@ -1,0 +1,97 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"
+    session:
+      logout: 
+        name: Sign Out
+        title_header: You are Logged out
+        button_message: Login
+        user_doesnot_grant_app: You must authorize CMAT access to your Fidor account
+        connectivity_problems: We experienced a problem, please try again
+        logout_no_problems: Please proceed to Login with your Fidor account
+    accounts: 
+      name: Accounts
+      show:
+        page_listing_account_title: Listing accounts
+        page_listing_account_details_title: Account Details
+        page_table_account_number: Account Number
+        page_table_account_tmr: Two-Man Rule
+        page_table_account_active: Active
+        page_table_account_operations: Operations
+    transactions:
+      show:
+        page_listing_transactions_title: Transactions
+        page_filter_start_date: Start Date
+        page_filter_end_date: End Date
+        page_filter_search: Search
+        page_table_transaction_id: Transaction ID
+        page_table_transaction_type: Transaction Type
+        page_table_subject: Subject
+        page_table_amount: Amount
+        page_table_booking_date: Booking Date
+        page_popover_title: Transaction Type Details
+        page_download_as_csv: Download as CSV
+    payments: 
+      name: Payments
+      show:
+        page_listing_payments_title: New Payment
+        page_mtan_title: Please confirm the mTan received
+        page_mtan_teaser: In order to complete the payment you must input the received mTan to validate it.
+        page_mtan_button: Confirm mTan.
+  errors:
+    page:
+      not_found: This page cannot be found
+    oauth:
+      POST_conn_error: Encountered an error when trying to perform the POST request - 
+      GET_conn_error: Encountered an error when trying to perform the GET request - 
+      httpStatus_error: Encountered an error with the response received - 
+      processStatus_error: An Error was provided by the service - 
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "No %{entry_name} found"
+          one: "Displaying <b>1</b> %{entry_name}"
+          other: "Displaying <b>all %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "Displaying %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> of <b>%{total}</b> in total"
+  oauth:
+    api:
+      remote_name_field: Remote Name
+      remote_iban_field: Remote IBAN
+      remote_bic_field: Remote BIC
+      mandate_id_field: Mandate ID
+      eref_field: eREF
+      remote_account_id_field: Remote Account ID
+      internal_transfer_id_field: Internal Transfer ID
+      cc_merchant_name_field: Merchant Name
+      cc_merchant_category_field: Merchant Category
+      cc_type_field: Type
+      cc_category_field: Category 

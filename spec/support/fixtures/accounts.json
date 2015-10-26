@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "id": "51",
+            "account_number": "99991714",
+            "iban": "DE85010180876304334438",
+            "balance": 207805,
+            "balance_available": 7579,
+            "overdraft": 0,
+            "preauth_amount": 237,
+            "cash_flow_per_year": 4889,
+            "is_debit_note_enabled": false,
+            "is_trusted": true,
+            "is_locked": false,
+            "currency": "EUR",
+            "customers": [
+                {
+                    "id": "51",
+                    "email": "gerold_2727@fidortecs.de",
+                    "first_name": "Gerold",
+                    "last_name": "Asil",
+                    "gender": "m",
+                    "title": "Frau",
+                    "nick": null,
+                    "maiden_name": null,
+                    "adr_street": "Adenauerufer",
+                    "adr_street_number": "115",
+                    "adr_post_code": "38676",
+                    "adr_city": "Rostock",
+                    "adr_country": "DE",
+                    "adr_phone": "0800-986169",
+                    "adr_mobile": "0167-323435",
+                    "adr_fax": "0169-694218",
+                    "adr_businessphone": "0151-1034703",
+                    "birthday": "1995-11-30",
+                    "creditor_identifier": null,
+                    "is_verified": true,
+                    "nationality": "DE",
+                    "marital_status": 2,
+                    "religion": 0,
+                    "id_card_registration_city": "Dresden",
+                    "id_card_number": "7000000722",
+                    "id_card_valid_until": "2015-12-05",
+                    "created_at": "2014-11-26 14:22:15 UTC",
+                    "updated_at": "2014-11-26 14:22:15 UTC"
+                }
+            ],
+            "created_at": "2014-11-26 14:22:15 UTC",
+            "updated_at": "2014-12-11 14:52:06 UTC"
+        }
+    ],
+    "collection": {
+        "per_page": 100,
+        "current_page": 1,
+        "current_entries": 1,
+        "total_entries": 1,
+        "total_pages": 1
+    }
+}

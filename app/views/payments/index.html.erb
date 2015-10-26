@@ -1,0 +1,52 @@
+<div class="page-header">
+  <h1>Listing Available payments <small>for this account</small></h1>
+</div>
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+	  <th>Account Number</th>
+    <th>Amount</th>
+    <th>Remote Iban</th>
+    <th>Remote BIC</th>
+    <th>Created at</th>
+	  <th>Status</th>
+	  <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @payments.each do |payment| %>
+    <tr> 
+	    <td><%= payment.id %></td>
+		  <td><%= payment.account.account_number %></td>
+      <td><%= payment.amount %></td>
+      <td><%= payment.iban %></td>
+      <td><%= payment.bic %></td>
+      <td><%= payment.pretty_created_at %></td>
+		  <td><%= payment.status.name %></td>
+    <% if payment.can_approve?(session[:id]) %>
+      <td>
+        <%= link_to 'Approve',approve_payment_path(payment) %> /
+        <%= link_to 'Deny', deny_payment_path(payment) %>
+      </td>
+    <% else %>
+      <td>
+        <% if payment.is_denied? %>
+          <%= link_to 'Delete',payment_path(payment), method: :delete, data: { confirm: 'Are you certain you want to delete this?' } %> /
+          <%= link_to 'Modify', edit_payment_path(payment) %>
+        <% else %>
+          <%= link_to 'Show',[@account,payment] %>
+        <% end %>
+      </td>
+     <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+  <%= paginate @payments %>
+  <%= page_entries_info @payments %> 
+<br>
+
+<%= link_to 'New Payment', new_payment_path %>
+

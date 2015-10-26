@@ -1,0 +1,192 @@
+[
+        {
+            "id": "14777",
+            "account_id": "534",
+            "transaction_type": "payin_fidorpay",
+            "transaction_type_details": {
+                "remote_account_id": "99998975",
+                "internal_transfer_id": null
+            },
+            "subject": "Freunden Geld leihen - von Maendi Elmann",
+            "amount": 0,
+            "currency": null,
+            "booking_date": "2014-12-31",
+            "value_date": null,
+            "booking_code": null,
+            "return_transaction_id": null,
+            "created_at": "2015-01-29 12:28:19 UTC",
+            "updated_at": "2015-01-29 12:28:19 UTC"
+        },
+        {
+            "id": "14776",
+            "account_id": "534",
+            "transaction_type": "payin_fidorpay",
+            "transaction_type_details": {
+                "remote_account_id": "99995550",
+                "internal_transfer_id": null
+            },
+            "subject": "Rückzahlung Auslage 691447",
+            "amount": 0,
+            "currency": null,
+            "booking_date": "2015-01-01",
+            "value_date": null,
+            "booking_code": null,
+            "return_transaction_id": null,
+            "created_at": "2015-01-29 12:28:19 UTC",
+            "updated_at": "2015-01-29 12:28:19 UTC"
+        },
+        {
+            "id": "14775",
+            "account_id": "534",
+            "transaction_type": "payin_fidorpay",
+            "transaction_type_details": {
+                "remote_account_id": "99997774",
+                "internal_transfer_id": null
+            },
+            "subject": "Verkauf Ebay 122593",
+            "amount": 0,
+            "currency": null,
+            "booking_date": "2015-01-18",
+            "value_date": null,
+            "booking_code": null,
+            "return_transaction_id": null,
+            "created_at": "2015-01-29 12:28:19 UTC",
+            "updated_at": "2015-01-29 12:28:19 UTC"
+        },
+        {
+            "id": "14774",
+            "account_id": "534",
+            "transaction_type": "payin_fidorpay",
+            "transaction_type_details": {
+                "remote_account_id": "99991472",
+                "internal_transfer_id": null
+            },
+            "subject": "Rückzahlung Auslage 676070",
+            "amount": 0,
+            "currency": null,
+            "booking_date": "2015-01-23",
+            "value_date": null,
+            "booking_code": null,
+            "return_transaction_id": null,
+            "created_at": "2015-01-29 12:28:19 UTC",
+            "updated_at": "2015-01-29 12:28:19 UTC"
+        },
+        {
+            "id": "14773",
+            "account_id": "534",
+            "transaction_type": "payin_fidorpay",
+            "transaction_type_details": {
+                "remote_account_id": "99992246",
+                "internal_transfer_id": null
+            },
+            "subject": "Schmiergeld von Schaklin ***",
+            "amount": 0,
+            "currency": null,
+            "booking_date": "2015-01-01",
+            "value_date": null,
+            "booking_code": null,
+            "return_transaction_id": null,
+            "created_at": "2015-01-29 12:28:19 UTC",
+            "updated_at": "2015-01-29 12:28:19 UTC"
+        },
+        {
+            "id": "14772",
+            "account_id": "534",
+            "transaction_type": "payout_credit_note_sepa",
+            "transaction_type_details": {
+                "sepa_credit_transfer_id": null,
+                "remote_name": "Down Jesus",
+                "remote_iban": "DE04333706726265131076",
+                "remote_bic": "PARBDEFH"
+            },
+            "subject": "KFZ Versicherung 555921",
+            "amount": -152516,
+            "currency": null,
+            "booking_date": "2014-10-31",
+            "value_date": "2014-11-01",
+            "booking_code": null,
+            "return_transaction_id": null,
+            "created_at": "2015-01-29 12:28:19 UTC",
+            "updated_at": "2015-01-29 12:28:19 UTC"
+        },
+        {
+            "id": "14771",
+            "account_id": "534",
+            "transaction_type": "payout_credit_note_sepa",
+            "transaction_type_details": {
+                "sepa_credit_transfer_id": null,
+                "remote_name": "Geier Gabriel",
+                "remote_iban": "DE85692843343983318402",
+                "remote_bic": "CITIDEFFKEL"
+            },
+            "subject": "Mitgliedsbeitrag 676508",
+            "amount": -160927,
+            "currency": null,
+            "booking_date": "2014-11-08",
+            "value_date": "2014-11-09",
+            "booking_code": null,
+            "return_transaction_id": null,
+            "created_at": "2015-01-29 12:28:19 UTC",
+            "updated_at": "2015-01-29 12:28:19 UTC"
+        },
+        {
+            "id": "14770",
+            "account_id": "534",
+            "transaction_type": "payout_credit_note_sepa",
+            "transaction_type_details": {
+                "sepa_credit_transfer_id": null,
+                "remote_name": "Witzka Peter",
+                "remote_iban": "DE26943527764940823364",
+                "remote_bic": "PARBDEFH"
+            },
+            "subject": "KFZ Versicherung 1098001",
+            "amount": -196667,
+            "currency": null,
+            "booking_date": "2014-12-27",
+            "value_date": "2014-12-28",
+            "booking_code": null,
+            "return_transaction_id": null,
+            "created_at": "2015-01-29 12:28:19 UTC",
+            "updated_at": "2015-01-29 12:28:19 UTC"
+        },
+        {
+            "id": "14769",
+            "account_id": "534",
+            "transaction_type": "payout_credit_note_sepa",
+            "transaction_type_details": {
+                "sepa_credit_transfer_id": null,
+                "remote_name": "Meier Moses",
+                "remote_iban": "DE20666387702484403494",
+                "remote_bic": "CELADEFF"
+            },
+            "subject": "Mofa Tuning - Ersatzeile",
+            "amount": -182321,
+            "currency": null,
+            "booking_date": "2015-01-25",
+            "value_date": "2015-01-26",
+            "booking_code": null,
+            "return_transaction_id": null,
+            "created_at": "2015-01-29 12:28:19 UTC",
+            "updated_at": "2015-01-29 12:28:19 UTC"
+        },
+        {
+            "id": "14768",
+            "account_id": "534",
+            "transaction_type": "payout_credit_note_sepa",
+            "transaction_type_details": {
+                "sepa_credit_transfer_id": null,
+                "remote_name": "Spencer Heide",
+                "remote_iban": "DE08474121590232607273",
+                "remote_bic": "TVBADEFF001"
+            },
+            "subject": "UnfallVersicherung 580102",
+            "amount": -60677,
+            "currency": null,
+            "booking_date": "2014-12-27",
+            "value_date": "2014-12-28",
+            "booking_code": null,
+            "return_transaction_id": null,
+            "created_at": "2015-01-29 12:28:19 UTC",
+            "updated_at": "2015-01-29 12:28:19 UTC"
+        }
+]

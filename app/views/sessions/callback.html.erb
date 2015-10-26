@@ -1,0 +1,6 @@
+<!-- Contenido aqui--> 
+<% if flash[:error] %>
+<h1><%= flash[:error] %><%= I18n.t('errors.page.not_found') %></h1>
+<% else %>
+<%= session[:token] %>
+<% end %>

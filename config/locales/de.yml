@@ -1,0 +1,97 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+de:
+  hello: "Hallo"
+  views:
+    pagination:
+      first: "&laquo; zuerst"
+      last: "zuletzt &raquo;"
+      previous: "&lsaquo; vorhergehend"
+      next: "nächster &rsaquo;"
+      truncate: "&hellip;"
+    session:
+      logout: 
+        name: Austragen
+        title_header: Sie sind eingeloggt
+        button_message: einloggen
+        user_doesnot_grant_app: Sie müssen CMAT den Zugriff auf Ihre Fidor Konto autorisieren
+        connectivity_problems: Wir hatten ein Problem, bitte wiederholen
+        logout_no_problems: Bitte fahren Sie mit Ihrer Fidor Konto einloggen
+    accounts: 
+      name: Konten
+      show:
+        page_listing_account_title: Listing Konten
+        page_listing_account_details_title: Kontodetails
+        page_table_account_number: Kontonummer
+        page_table_account_tmr: Zwei-Mann-Regel
+        page_table_account_active: Aktiv
+        page_table_account_operations: Geschäftstätigkeit
+    transactions:
+      show:
+        page_listing_transactions_title: Transaktionen
+        page_filter_start_date: Startdatum
+        page_filter_end_date: Enddatum
+        page_filter_search: Suche
+        page_table_transaction_id: Transaktion ID
+        page_table_transaction_type: Transaktionstyp
+        page_table_subject: Gegenstand
+        page_table_amount: Menge
+        page_table_booking_date: Reservierungsdatum
+        page_popover_title: Transaktionsart Einzelheiten
+        page_download_as_csv: Download als CSV
+    payments: 
+      name: Zahlungen
+      show:
+        page_listing_payments_title: New Bezahlung
+        page_mtan_title: Bitte bestätigen Sie die mTAN erhalten
+        page_mtan_teaser: Um die Zahlung abzuschließen müssen Sie den Eingang der empfangene mTAN, um sie zu überprüfen.
+        page_mtan_button: Bestätigen mTan.
+  errors:
+    page:
+      not_found: Diese Seite kann nicht gefunden werden
+    oauth:
+      POST_conn_error: Ein Fehler ist aufgetreten beim Versuch, die POST-Anfrage durchführen -  
+      GET_conn_error: Ein Fehler ist aufgetreten beim Versuch, die GET-Anfrage durchführen -
+      httpStatus_error: Ein Fehler ist aufgetreten mit der Antwort Received - 
+      processStatus_error: Ein Fehler wurde von der erbrachten Leistung -
+  helpers:
+    page_entries_info:
+      one_page:
+        display_entries:
+          zero: "Kein %{entry_name} gefunden"
+          one: "zeigend <b>1</b> %{entry_name}"
+          other: "zeigend <b>all %{count}</b> %{entry_name}"
+      more_pages:
+        display_entries: "zeigend %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> of <b>%{total}</b> im Gesamt"
+  oauth:
+    api:
+      remote_name_field: Remote-Name
+      remote_iban_field: Remote-IBAN
+      remote_bic_field: Remote-BIC
+      mandate_id_field: Mandat ID
+      eref_field: eREF
+      remote_account_id_field: Fern Konto ID
+      internal_transfer_id_field: Interne Über ID
+      cc_merchant_name_field: Händlername
+      cc_merchant_category_field: Händler-Kategorie
+      cc_type_field: Art
+      cc_category_field: Kategorie
